@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Crimson Text", serif;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(100, 94, 94, 0.63);
+}
+
+.container {
+  width: 480px;
+  height: 630px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 1px 5px 25px 10px rgba(38, 1, 46, 0.459);
+}
+
+/* form */
+form {
+  width: 90%;
+}
+
+.form-group {
+  height: 65px;
+}
+
+label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  height: 34px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+input:valid {
+  border: 1px solid rgba(14, 252, 14, 0.877);
+}
+
+input:invalid {
+  border: 1px solid rgb(201, 24, 24);
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+button:hover {
+  filter: brightness(150%);
+  background-color: rgb(20, 16, 16);
+}
+
+button:focus {
+  outline: none;
+}
+
+.message-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
